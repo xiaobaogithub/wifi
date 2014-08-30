@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true">
+	
+<LinearLayout
+	android:id="@+id/layout_header_buttons"
+	android:background="@drawable/header_tab_background"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+		<ImageButton 
+		android:id="@+id/buttonMain"
+		android:src="@drawable/tab_park"
+		style="@style/header_button"/>
+		<ImageButton 
+		android:id="@+id/buttonHistory2"
+		android:src="@drawable/tab_history"
+		style="@style/header_button"/>
+		<ImageButton
+        android:id="@+id/buttonMap2"
+        android:src="@drawable/tab_daa"
+        style="@style/header_button" />	
+        <ImageButton
+        android:id="@+id/buttontimemode"
+        android:src="@drawable/tab_setting"
+        style="@style/header_button" />
+	</LinearLayout>
+</LinearLayout>
+

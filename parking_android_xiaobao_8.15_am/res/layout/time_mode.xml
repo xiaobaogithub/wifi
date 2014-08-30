@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+       
+    <Button
+        android:id="@+id/timebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_background"
+        android:textSize="15sp"
+        android:text="Time" 
+        android:layout_centerHorizontal="true">
+    </Button>  
+    
+     <TextView
+        android:id="@+id/texttime"
+        android:layout_below="@+id/timebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textColor="#FF3030"
+        android:gravity="center" 
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+	    android:id="@+id/spinner_time"
+	    android:layout_below="@+id/texttime"
+	    android:background="@drawable/time_background2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="115sp"
+	    android:layout_marginTop="10sp"
+	    android:textColor="#87CEEB">
+	 </Spinner>
+	 
+    <TextView
+        android:id="@+id/textmode"
+        android:layout_below="@+id/spinner_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textColor="#FF00FF"
+        android:gravity="center" 
+        android:layout_centerHorizontal="true"/>
+    
+    <Button 
+		android:id="@+id/buttonCopy"
+		android:layout_below="@+id/textmode"
+		android:background="@drawable/time_background3"
+		android:layout_marginTop="10sp"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="CopyRight" 
+        android:layout_centerHorizontal="true"/>
+
+     
+ <include layout="@layout/head_time_mode" />
+
+</RelativeLayout>
