@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3_" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/open"
+            android:text="@string/close"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/close"
+            android:text="@string/state"
+            android:textSize="7pt" />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check"
+            android:text="@string/scan"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/textinterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scan"
+            android:text="@string/interval" />
+
+        <EditText
+            android:id="@+id/interval"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textinterval" />
+
+        <TextView
+            android:id="@+id/texttimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interval"
+            android:text="@string/times" />
+
+        <EditText
+            android:id="@+id/times"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texttimes" />
+
+        <TextView
+            android:id="@+id/textname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/times"
+            android:text="@string/nameOfAP" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textname" />
+
+        <Button
+            android:id="@+id/stopscan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="@string/stop"
+            android:textSize="7pt" />
+
+        <TextView
+            android:id="@+id/allNetWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stopscan"
+            android:text="You haven&apos;t scan wifi information,now you can begin to scan through two ways."
+            android:textColor="#000000"
+            android:textSize="8pt" />
+    </RelativeLayout>
+
+</ScrollView>
