@@ -11,7 +11,7 @@ import android.net.wifi.WifiManager.WifiLock;
 
 public class wifiAdmin {
 
-	//定义一个WifiManager对象
+	    //定义一个WifiManager对象
 		private WifiManager mWifiManager;
 		//定义一个WifiInfo对象
 		private WifiInfo mWifiInfo;
@@ -68,7 +68,7 @@ public class wifiAdmin {
 			//连接配置好指定ID的网络
 			mWifiManager.enableNetwork(mWifiConfigurations.get(index).networkId, true);
 		}
-		public void startScan(){
+		public void startToScan(){
 			mWifiManager.startScan();
 			//得到扫描结果
 			mWifiList=mWifiManager.getScanResults();
@@ -122,6 +122,3 @@ public class wifiAdmin {
 			mWifiManager.disconnect();
 		}
 }
-
-
-

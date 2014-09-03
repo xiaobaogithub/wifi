@@ -75,11 +75,17 @@ public class ParkingSlotApplication extends Application {
 		//为了保存relativeTime的初始值即为文件中存的settingTime与现取的currentTime的差值
 		try {
 			File urlFile = new File(Environment.getExternalStorageDirectory()+"/" + "notificationTime.txt");
-			InputStreamReader isr = new InputStreamReader(new FileInputStream(urlFile),"UTF-8");
-			BufferedReader br = new BufferedReader(isr);
-			while((line = br.readLine()) != null) {
-				stri = stri + line;
+			if(urlFile.exists()) {
+				InputStreamReader isr = new InputStreamReader(new FileInputStream(urlFile),"UTF-8");
+				BufferedReader br = new BufferedReader(isr);
+				while((line = br.readLine()) != null) {
+					stri = stri + line;
+				}
 			}
+			else {
+				stri = "14400000";
+			}
+			
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
